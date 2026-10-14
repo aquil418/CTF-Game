@@ -1,0 +1,17 @@
+# Java compiled files
+*.class
+
+# Generated build output
+/build/
+/dist/
+
+# IDE-specific settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

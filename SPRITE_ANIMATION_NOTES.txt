@@ -1,0 +1,15 @@
+CTF sprite animation update
+
+Assets (src/ctf/ui):
+- runner.gif: used for idle/running character frames.
+- jumper.gif: included and loaded for the future jump/gravity implementation; it is not activated yet because the current game has no jump/vertical physics state.
+
+Current behavior:
+- The old red/blue player dots are replaced by the runner character sprite.
+- The first runner frame is used while a player is stationary.
+- The runner frames animate while the server-reported player position changes.
+- The sprite flips horizontally when the player moves left.
+- Team-coloured ground markers and a yellow outline for the local player remain.
+- Server/client movement and the lobby protocol are unchanged.
+
+Resource files must remain under src/ctf/ui so they are copied into the classpath by the NetBeans/Ant build.
